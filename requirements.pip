@@ -1,0 +1,9 @@
+Django
+django-auth-ldap
+django-wsgiserver
+feedparser
+celery==2.4.5
+django-celery
+django-kombu
+django-taggit
+python-ldap

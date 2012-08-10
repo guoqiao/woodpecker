@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="span6 offset3 login">
+    <form class="form" action="" method="post">
+        {% csrf_token %}
+        <div class="formbody">
+            {% if form.errors %}
+            <div class="alert alert-error fade in">
+                <a class="close"  data-dismiss="alert" href="#">×</a>
+                <strong>账号与密码不匹配，请重试！</strong>
+            </div>
+            {% endif %}
+            <label for="login">
+                账号
+                <input autocapitalize="off" class="span5" id="id_username" name="username" tabindex="1" type="text">
+            </label>
+
+            <label for="password">
+                密码
+                <input autocomplete="disabled" class="span5" id="id_password" name="password" tabindex="2" type="password" value="">
+            </label>
+
+            <label class="submit_btn">
+                <button class="btn btn-primary" name="commit" tabindex="3" type="submit">登录</button>
+                <a href="{% url feeds:index %}" class="btn">取消</a>
+                <input type="hidden" name="next" value="{{ next }}">
+            </label>
+        </div>
+    </form>
+</div>
+{% endblock %}

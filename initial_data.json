@@ -1,0 +1,200 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-06-21 04:44:45", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$9e26f$f8bb9407b0cbe5d75aad88bdefe0648e16dfab8a", 
+            "email": "guoqiao@gmail.com", 
+            "date_joined": "2012-05-08 03:16:16"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "cnBeta.COM", 
+            "interval": 3600, 
+            "site_url": "http://cnbeta.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:38:02", 
+            "descn": "", 
+            "res_url": "http://cnbeta.com/backend.php", 
+            "type": "rss", 
+            "order": 1
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "Engadget", 
+            "interval": 3600, 
+            "site_url": "http://cn.engadget.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:38:29", 
+            "descn": "", 
+            "res_url": "http://cn.engadget.com/tag/breaking+news/rss.xml", 
+            "type": "rss", 
+            "order": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u962e\u4e00\u5cf0\u7684\u7f51\u7edc\u65e5\u5fd7", 
+            "interval": 3600, 
+            "site_url": "http://www.ruanyifeng.com/blog/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:38:44", 
+            "descn": "", 
+            "res_url": "http://www.ruanyifeng.com/blog/atom.xml", 
+            "type": "rss", 
+            "order": 3
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u4f2f\u4e50\u5728\u7ebf\u535a\u5ba2", 
+            "interval": 3600, 
+            "site_url": "http://blog.jobbole.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:39:17", 
+            "descn": "", 
+            "res_url": "http://blog.jobbole.com/feed/", 
+            "type": "rss", 
+            "order": 5
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "36\u6c2a--\u5173\u6ce8\u4e92\u8054\u7f51\u521b\u4e1a", 
+            "interval": 3600, 
+            "site_url": "http://www.36kr.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:39:36", 
+            "descn": "", 
+            "res_url": "http://www.36kr.com/feed", 
+            "type": "rss", 
+            "order": 6
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u9177\u58f3 - CoolShell.cn", 
+            "interval": 3600, 
+            "site_url": "http://coolshell.cn/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:39:58", 
+            "descn": "", 
+            "res_url": "http://coolshell.cn/feed", 
+            "type": "rss", 
+            "order": 7
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u5916\u520aIT\u8bc4\u8bba", 
+            "interval": 3600, 
+            "site_url": "http://www.aqee.net/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:40:36", 
+            "descn": "", 
+            "res_url": "http://feed.feedsky.com/aqee-net", 
+            "type": "rss", 
+            "order": 1000
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u4ec0\u4e48\u503c\u5f97\u4e70", 
+            "interval": 3600, 
+            "site_url": "http://www.smzdm.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:40:52", 
+            "descn": "", 
+            "res_url": "http://feed.smzdm.com/", 
+            "type": "rss", 
+            "order": 1000
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u5f2f\u66f2\u8bc4\u8bba", 
+            "interval": 3600, 
+            "site_url": "http://www.tektalk.org/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:41:03", 
+            "descn": "", 
+            "res_url": "http://feed.feedsky.com/tektalk", 
+            "type": "rss", 
+            "order": 1000
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "python.cn", 
+            "interval": 3600, 
+            "site_url": "http://simple-is-better.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:41:29", 
+            "descn": "", 
+            "res_url": "http://feed.feedsky.com/simple-is-better", 
+            "type": "rss", 
+            "order": 1002
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u9ed1\u5ba2news ", 
+            "interval": 86400, 
+            "site_url": "http://lbnews.sinaapp.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:41:45", 
+            "descn": "", 
+            "res_url": "http://lbnews.sinaapp.com/feed/", 
+            "type": "rss", 
+            "order": 1003
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "feeds.resource", 
+        "fields": {
+            "name": "\u5929\u6daf\u6d77\u9601", 
+            "interval": 3600, 
+            "site_url": "http://www.web20share.com/", 
+            "feed_updated": null, 
+            "updated_on": "2012-06-21 04:42:01", 
+            "descn": "", 
+            "res_url": "http://feed.web20share.com/", 
+            "type": "rss", 
+            "order": 1013
+        }
+    }
+]

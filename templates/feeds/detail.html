@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='well'>
+    <h2>
+        <a href="{{ r.site_url }}">{{ r.name }}</a>
+    </h2>
+    <small>{{r.feed_updated|date:'m-d H:i:s'}}</small>
+    <ul class="unstyled">
+        {% for t in r.topic_set.all %}
+        <li>
+        <h4>
+            <a target="_blank" href="{{ t.link }}" title="{{ t.title }} :: {{ t.descn|slice:":20" }}...<span>{{ t.date }} // {{ r.url }}</span>">{{ t.title }}</a>
+        </h4>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% if user.is_authenticated %}
+<form class="form" method="post" action="">
+    {{ form }}
+    <p>
+    <button class='btn btn-large' type="submit" class="btn">保存</button>
+    </p>
+</form>
+{% else %}
+<p>
+<a href="{% url accounts:login %}?next={% url feeds:detail r.pk %}">登录</a>后可订阅此网站信息
+</p>
+{% endif %}
+{% endblock %}
