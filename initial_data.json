@@ -42,7 +42,7 @@
             "feed_updated": null, 
             "updated_on": "2012-06-21 04:38:29", 
             "descn": "", 
-            "res_url": "http://cn.engadget.com/tag/breaking+news/rss.xml", 
+            "res_url": "http://cn.engadget.com/rss.xml",
             "type": "rss", 
             "order": 2
         }
