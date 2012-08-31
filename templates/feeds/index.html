@@ -11,7 +11,7 @@
         </h2>
         <small>{{r.feed_updated|date:'m-d H:i:s'}}</small>
         <ul class="unstyled">
-            {% for t in r.topic_set.all %}
+            {% for t in r.topic_set.all|slice:":10" %}
             <li>
             <h4>
                 <a target="_blank" href="{{ t.link }}" title="{{ t.title }} :: {{ t.descn|slice:":20" }}...<span>{{ t.date }} // {{ r.url }}</span>">{{ t.title|truncatehanzi:":20" }}</a>
