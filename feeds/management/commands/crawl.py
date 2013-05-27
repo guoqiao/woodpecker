@@ -10,7 +10,7 @@ MAX = 10
 
 class Command(NoArgsCommand):
     help = "do crawl"
-    
+
     def handle_noargs(self, **options):
         for res in Resource.objects.all():
             self.stdout.write('crawling %s\n' % res)
