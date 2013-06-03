@@ -3,6 +3,7 @@
 *.pyc
 *.swp
 *.db
+*.sqlite
 local_settings.py
 local.py
 ENV

@@ -1,21 +1,22 @@
-# Django settings for woodpecker_site project.
-
-import os
-HERE = os.path.dirname(os.path.abspath(__file__))
-
-PROJECT_ROOT = HERE
-
-def abs_path(path):
-    return os.path.join(HERE,path)
-
-PYTHON = abs_path('ENV/bin/python')
-MANAGE = abs_path('manage.py')
+#-*- coding:utf-8 -*-
+from __future__ import unicode_literals
+import os, sys
+from path import path
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+FILE = path(os.path.abspath(__file__))
+HERE = FILE.parent
+PROJ_ROOT = HERE.parent
+PROJ_NAME = PROJ_ROOT.name
+APPS_ROOT = PROJ_ROOT/'apps'
+
+sys.path.insert(0, PROJ_ROOT)
+sys.path.insert(0, APPS_ROOT)
+
 ADMINS = (
-    ('Guo Qiao', 'guoqiao@insigma.com.cn'),
+    ('Guo Qiao', 'guoqiao@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -23,7 +24,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': abs_path('sqlite.db'),                      # Or path to database file if using sqlite3.
+        'NAME': PROJ_ROOT/'db.sqlite',   # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
